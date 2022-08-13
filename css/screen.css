@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.div-in-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teks-section {
+  display: flex;
+  font-family: 'Lato';
+}
+
+.my-photo {
+  height: 56vh;
+  opacity: 100;
+  background-image: url(../img/myPhoto.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-radius: 10%;
+  display: flex;
+}
+
+.photo-trans {
+  animation-name: opening;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes opening {
+  from {
+    opacity: 0%;
+    top: -20px;
+  }
+  to {
+    opacity: 100%;
+    top: 0px;
+  }
+}
+
+.transition {
+  animation-name: opening;
+  animation-duration: 0.8s;
+  animation-delay: 0.4s;
+  position: relative;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.bot-trans {
+  background-color: black;
+  opacity: 0;
+  color: yellow;
+  width: max-content;
+  animation-name: biasalah;
+  animation-duration: 0.6s;
+  padding: 4px;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+@keyframes biasalah {
+  from {
+    opacity: 0;
+    overflow: hidden;
+  }
+  to {
+    opacity: 100;
+    overflow: hidden;
+  }
+}
+
+@keyframes geser {
+  from {
+    opacity: 0;
+    overflow: hidden;
+    width: 0;
+  }
+  to {
+    opacity: 100;
+    overflow: hidden;
+    width: 210px;
+    padding-left: 10px;
+  }
+}
+
+.abt {
+  background-color: black;
+  color: yellow;
+  opacity: 0;
+  animation-name: geser;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+footer {
+  background-color: yellow;
+  color: black;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.centering {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.input-form {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.label-form {
+  padding-left: 40px;
+}
+
+.box-center {
+  position: absolute;
+  width: 500px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  background: white;
+  padding: 10px 15px 15px 15px;
+}
+
+.box-center h1 {
+  padding-bottom: 8px;
+  padding-top: 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: 'Montserrat';
+}
+
+.box-center label {
+  font-size: 20px;
+}
+
+.box-center form {
+  padding: 0px 0px 40px 0px;
+  border-bottom: 1px solid silver;
+}
+
+.box-center input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid silver;
+  width: 380px;
+  outline: 0;
+  transition: border 0.1s ease-out;
+}
+
+.box-center input:focus {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid black;
+}
+
+.box-center button {
+  border-radius: 30px;
+  width: 300px;
+  font-size: 24px;
+  background-color: black;
+  outline: none !important;
+  border-color: none !important;
+  color: white;
+  font-family: 'Montserrat';
+  transition: background-color 0.2s ease-out;
+}
+
+.box-center button:hover {
+  outline: 0;
+  border: 0;
+  background-color: yellow;
+  color: black;
+}
+
+.box-center p {
+  padding-top: 1%;
+}
+
+.div-button {
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .box-center {
+    width: 400px;
+    height: 400px;
+    padding: 0px 30px 30px 30px;
+  }
+  .box-center form {
+    padding: 0px 0px 50px 0px;
+  }
+  .box-center input {
+    width: 250px;
+  }
+  .box-center button {
+    width: 150px;
+    font-size: 16px;
+  }
+  .div-button {
+    padding-bottom: 15px;
+  }
+}
