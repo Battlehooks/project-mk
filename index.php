@@ -68,7 +68,7 @@ if (isset($_POST['user'])) {
           </div>
         </form>
         <div class="centering">
-          <p style="position: absolute; bottom: -8px;">Belum punya akun? Daftar di&nbsp;<a href="registrasi.php">sini</a></p>
+          <p style="position: absolute; transform: translate(0, 70%);">Belum punya akun? Daftar di&nbsp;<a href="registrasi.php">sini</a></p>
         </div>
       </div>
     </section>

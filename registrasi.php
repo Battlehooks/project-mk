@@ -26,17 +26,17 @@ if (isset($_POST['user'])) {
       <div class="box-center">
         <h1 class="transition" style="animation-delay: 0.01s;">Registrasi</h1>
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-          <div>
+          <div class="label-form">
             <label for="user" id="user-label">Username :</label><br>
             <input type="text" id="user" name="user" />
           </div>
           <br><br><br>
-          <div>
+          <div class="label-form">
             <label for="pass" id="pass-label">Password :</label>
             <input type="password" id="pass" name="pass" />
           </div>
-          <br><br><br>
-          <div class="centering" style="padding-bottom: 50px;">
+          <br><br>
+          <div class="centering div-button">
             <button type="submit" name="submit" id="submit" class="btn" style="position: absolute; transform: translate(0%, 25%)">REGISTRASI</button>
           </div>
           <div class="centering">
